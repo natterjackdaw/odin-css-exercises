@@ -1,27 +1,40 @@
+/* - Just as a reference, the font size in the desired outcome image is 16px. Aim to replicate the image *within reason*. */
+
 body {
   background: #eee;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 0.2em 0.5em 0.5em 0.5em;
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+  padding: 0.4em;
 }
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 0.5em;
+  padding: 0.8em 0.5em;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 10px 10px;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
 }
