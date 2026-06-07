@@ -10,31 +10,39 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
-  padding: 0.2em 0.5em 0.5em 0.5em;
+  /* they had padding: 8px */
+  padding: 0.2em 0.5em 0.5em 0.5em; 
 }
 
 .title {
   background: #e3f4ff;
   font-size: 16px;
+  /* they had padding 8px and margin-bottom 8px */
   padding: 0.4em;
 }
 
 .content {
   background: #e3f4ff;
+  /* they had margin-bottom 8px */
   margin-bottom: 0.5em;
+  /* they had padding 16px 8px */
   padding: 0.8em 0.5em;
 }
 
 .button-container {
   background: #e3f4ff;
-  padding: 10px 10px;
+  /* They had padding 8px */
+  padding: 10px;
+  /* we matched text-align */
   text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /* display and margin match */
   display: block;
+  /* padding was 8px and 24px */
   padding: 10px 20px;
   margin: 0 auto;
 }
