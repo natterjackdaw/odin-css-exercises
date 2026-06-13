@@ -1,3 +1,5 @@
+/* original */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
@@ -22,4 +24,24 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+
+/* I ended up cheating and looking at solution.
+The margin/padding ended up being more important than expected.
+*/
+
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* justify-content: space-between;  makes no difference*/
+  gap: 5px;
 }
