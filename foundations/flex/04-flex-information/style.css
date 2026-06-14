@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* they just center aligned body, that would have been easier! */
 }
 
 img {
@@ -11,18 +12,23 @@ img {
   font-size: 36px;
   font-weight: 900;
   display: flex;
+  /* they just center aligned body, that would have been easier! */
   justify-content: center;
-  margin-bottom: 32px;
+  /* we both match this */
+  margin-bottom: 32px; 
 }
 
+/* They called this container, which is a better name */
 .pretty-info {
   display: flex;
   justify-content: center;
   gap: 52px
 }
 
+/* they called this info - they only have "max-width" property */
 .icon-info {
   display: flex;
+  /*  they did not do a wrap or specify column (not sure how that works??) */
   flex-flow: column wrap;
   width: 200px;
   /* flex-shrink: 1 auto; */
@@ -30,6 +36,7 @@ img {
   justify-content: flex-start; /* this is default I just wrote it to help me */
 }
 
+/* they just center aligned body, that would have been easier! */
 .text {
   text-align: center;
 }
