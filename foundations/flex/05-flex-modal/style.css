@@ -20,6 +20,7 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* they have gap and padding of 16px */
   display: flex;
   padding: 12px;
 }
@@ -38,6 +39,9 @@ body {
   gap: 12px;
 }
 
+/* they have margin-bottom of 16px
+with no margin-right
+*/
 .text {
   margin-right: 12px;
 }
@@ -53,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* they only have flex-shrink, not the margin */
   flex-shrink: 0;
   margin: 0 12px 0 0;
 }
