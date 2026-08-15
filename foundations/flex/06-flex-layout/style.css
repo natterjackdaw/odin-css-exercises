@@ -23,4 +23,58 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+
+}
+
+/* My solution below */
+
+body {
+  margin: auto;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header {
+  padding: 1em 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #eeeeee;
+  padding: 0.2em 0;
+}
+
+.left-links, .right-links {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* .left-links a, .right-links a {
+ padding: 0 2em;
+} */
+
+a {
+  padding: 0 0.2em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.buttons {
+  margin: 1em auto;
+}
+
+.buttons button {
+  padding: 5px;
 }
