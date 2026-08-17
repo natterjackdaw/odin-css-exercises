@@ -20,7 +20,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  /* they have gap and padding of 16px */
+  /* they have gap and padding of 16px
+  which explains why theirs has more whitespace */
   display: flex;
   padding: 12px;
 }
@@ -30,7 +31,7 @@ body {
   justify-content: space-between;
   font-size: 18px;
   font-weight: 800;
-  /* margin: 12px 0; */
+  /* they had a 8px margin-bottom */
 }
 
 .all-text {
@@ -78,17 +79,18 @@ with no margin-right
   /* margin: 0 12px 0 0; */
 }
 
+/* They didn't have this  
+I have no idea how they got their buttons to display properly
+*/
 .options {
   display: flex;
   gap: 5px;
-  /* margin-top: 12px; */
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
-  /* margin: 10px 0 10px 0; */
 }
 
 button.continue {
