@@ -29,17 +29,47 @@ input {
 /* My solution below */
 
 body {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header, .footer {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  padding: 0;
 }
 
-.header {
-  padding: 1em 0;
+.left-links, .right-links {
+  list-style-type: none;
+  padding: 0 0.4em;
+  display: flex;
+  
+}
+
+.left-links li, .right-links li {
+  padding: 0 0.5em;
+}
+
+.left-links a, .right-links a {
+  text-decoration: none;
+  color: #5e5e5e;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+
+.footer {
+  align-self: flex-end;
 }
 
 .footer {
@@ -47,17 +77,16 @@ body {
   bottom: 0;
   background-color: #eeeeee;
   padding: 0.2em 0;
-}
-
-.left-links, .right-links {
+} 
+ .left-links, .right-links {
   display: flex;
   list-style-type: none;
   text-decoration: none;
 }
 
-/* .left-links a, .right-links a {
+.left-links a, .right-links a {
  padding: 0 2em;
-} */
+} 
 
 a {
   padding: 0 0.2em;
@@ -77,4 +106,6 @@ a {
 
 .buttons button {
   padding: 5px;
-}
+} 
+  
+*/
