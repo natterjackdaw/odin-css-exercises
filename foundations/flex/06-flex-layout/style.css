@@ -38,6 +38,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  /* They had padding: 16px; 
+  but that messes mine up,
+  it's too much
+  */
 }
 
 .left-links, .right-links {
@@ -47,12 +51,16 @@ body {
   
 }
 
+/* They used ul and gap! */
+
 .left-links li, .right-links li {
   padding: 0 0.5em;
 }
 
+
 .left-links a, .right-links a {
   text-decoration: none;
+  /* They used colour #666 */
   color: #5e5e5e;
 }
 
@@ -64,6 +72,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* They had gap: 16px; 
+  that would have been easier
+  */
 }
 
 .input {
@@ -74,47 +85,3 @@ body {
   padding: 8px 15px;
   margin: 0.5em 0;
 }
-
-/* 
-
-.footer {
-  align-self: flex-end;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #eeeeee;
-  padding: 0.2em 0;
-} 
- .left-links, .right-links {
-  display: flex;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.left-links a, .right-links a {
- padding: 0 2em;
-} 
-
-a {
-  padding: 0 0.2em;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2em 0;
-}
-
-.buttons {
-  margin: 1em auto;
-}
-
-.buttons button {
-  padding: 5px;
-} 
-  
-*/
