@@ -24,10 +24,17 @@ body {
 
 .content {
   display: flex;
+  /* This helped footer to the bottom, not sure why, it's from Stackoverflow
+  but it's flex-grow, flex-shrink, and flex-basis,
+  so I assume it allows the content to fill the remaining space to force
+  the footer to the bottom, but does not let the cards shrink, and
+  default size is automatically assigned?  */
+  flex: 1 0 auto;
 }
 
 .sidebar {
   width: 300px;
+  flex-shrink: 0;
   background: royalblue;
   /* box-sizing: border-box; */
   padding: 16px;
@@ -40,19 +47,25 @@ body {
   text-decoration: none;
 }
 
-a {
-  
-}
 
 .sidebar ul, li {
   list-style-type: none;
   padding: 0;
 }
 
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  flex-shrink: 1;
+  gap: 20px;
+}
+
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  max-width: 250px;
 }
 
 /* Footer */
@@ -62,7 +75,7 @@ a {
   background: #eee;
   color: darkmagenta;
   /* The footer is pushed to the bottom of the screen (the footer may go _below_ the bottom of the screen if the content of the 'cards' section overflows and/or if your screen is shorter). */
-  justify-self: end;
+  flex-shrink: 0;
   display: flex;
   /* The footer text is centered vertically. */
   align-items: center; 
