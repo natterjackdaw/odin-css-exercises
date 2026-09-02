@@ -1,4 +1,8 @@
-# CSS Exercises
+# CSS Exercises - my solutions
+
+My solutions to the Odin Project are in another branch.
+
+# CSS Exercises - text from original README below
 
 These exercises consist of a series of CSS-related tasks intended to complement the HTML and CSS content on The Odin Project (TOP). They should only be completed when instructed during the course of the curriculum.
 
